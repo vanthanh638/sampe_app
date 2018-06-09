@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-	root 'application#hello'
+  get 'static_page/home'
+
+  get 'static_page/help'
+
+  get 'static_page/about'
+
+  get 'static_page/contact'
+
+	root 'static_page#home'
 end
